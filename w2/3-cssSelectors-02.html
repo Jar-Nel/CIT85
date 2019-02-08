@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #ulList1 {
+            color: #333;
+        }
+
+        /*First*/
+        #ulList1 li:first-child {
+            color: #000;
+            background-color: #3c3;
+        }
+
+        /*Last*/
+        #ulList1 li:last-child {
+            color: #000;
+            background-color: #c33;
+        }
+
+        /*Even*/
+        #ulList2 li:nth-child(even) {
+            color: #000;
+            background-color: #ccc;
+        }
+
+        /*odd*/
+        #ulList2 li:nth-child(odd) {
+            color: #000;
+            background-color: #acf;
+        }
+
+        #ulList2 li:hover {
+            background-color: #fca
+        }
+
+        /*nth-child(n)*/
+        #ulList3 li:nth-child(3)
+        {
+            background-color: #FFFC00
+        }
+        /*only child*/
+        #ulList3 li span:only-child{
+            background-color: #00FF00
+        }
+        /*nth-child(anb)*/
+        #ulList3 li:nth-child(4n+0){
+            background-color: rgb(255, 196, 0);
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="ulList1">
+        <li><span>Item 1</span> [first-child]</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5 [last-child]</li>
+    </ul>
+    <ul id="ulList2">
+        <li><span>Item 1</span> [nth-child(odd)]</li>
+        <li>Item 2 [nth-child(even)]</li>
+        <li>Item 3 [nth-child(odd)]</li>
+        <li>Item 4 [nth-child(even)]</li>
+        <li>Item 5 [nth-child(odd)]</li>
+    </ul>
+    <ul id="ulList3">
+        <li>Item <span>one</span> [span:only-child]</li>
+        <li>Item two</li>
+        <li>Item three [nth-child(3)]</li>
+        <li>Item four [nth-child(4n+0)]</li>
+        <li>Item five</li>
+        <li>Item six</li>
+        <li>Item seven</li>
+        <li>Item eight [nth-child(4n+0)]</li>
+        <li>Item nine</li>
+    </ul>
+
+</body>
+
+</html>
