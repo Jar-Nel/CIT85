@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* affects all <div> elements */
+        div {
+            width: 88%;
+            height: 300px;
+            border: 1px solid #444;
+            border-radius: 20px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        /* affects all <p> elements */
+        p {
+            width: 75%;
+            height: 75px;
+            border: 1px dotted red;
+        }
+
+        /* affects all <h1> elements */
+        h1 {
+            width: 80%;
+            height: 40px;
+            border: 1px dashed green;
+        }
+
+        /* css selectors */
+        /* first letter of text in all <p> tags */
+        p::first-letter {
+            color: darkgoldenrod;
+            font-style: italic;
+            font-size: 130%;
+        }
+
+        /* first line of text in all <p> tags */
+        p::first-line {
+            color: darkslateblue;
+        }
+
+        /* selects the first div that is an immediate sibling to h1 */
+        body h1+div {
+            height: 100px;
+            color: maroon;
+        }
+
+        /* class container on a div, will affect the div */
+        .container {
+            width: 80%;
+            margin: auto;
+            color: green;
+        }
+
+        /* gets the second child <p> element under the div with class container*/
+        #left p:nth-child(2) {
+            color: red;
+        }
+
+        /* selects the hover action on the odd (first and third) p elements in the div with the id of 'left' */
+        #left p:nth-child(odd):hover {
+            background-color: #bbb;
+            color: tomato;
+        }
+        /*selects the element with the id of 'left' that is a child of the div with the class container */
+        .container #left {
+            position: relative;
+            float:left;
+            border:0;
+            padding: 0;
+            width: 65%;
+            box-sizing: border-box;
+        }
+        /*selects the element with the id of 'right' that is a child of the div with the class container */
+        .container #right{
+            position: relative;
+            float:right;
+            border:1px solid orange;
+            padding: 10px;;
+            width:35%;
+            box-sizing: border-box;
+        }
+        /* selects all <p> elements under the div with the id of 'right' */
+        #right p {
+            width:auto;
+            height:auto;
+            border:0;
+            color: #666;
+        }
+        /*selects the area after the content in the div with the containter class*/
+        .container::after {
+            clear:both;
+        }
+
+        /* selects the element with the id of footer (in this case, the last div)*/
+        #footer {
+            font-style: italic;
+            height: 100px;
+            color: midnightblue;
+        }
+
+        /* this selects the last span element in the first p element of the body */
+        body p:first-child span:last-child {
+            background: midnightblue;
+            color: white;
+        }
+        /*selects the area before the content in the div with id of 'footer'*/
+        #footer::before{
+            content: "This was inserted.";
+            color: chocolate;
+            font-style: normal;
+        }
+    </style>
+    <title>cssSpecificity</title>
+</head>
+
+<body>
+    <p>This is an opening paragraph.<br /><span>This is the second line.</span><br /><span>This is the third
+            line.</span></p>
+    <h1>This is a header following the opening paragraph</h1>
+    <div>This is a div following the header</div>
+    <div class="container">
+        <div id="left">
+            <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis dolor
+                laborum
+                aliquam, accusantium dolorem vero consectetur impedit minus dicta expedita voluptate? Quo aperiam at,
+                nulla
+                odio laudantium voluptatibus totam?</p>
+            <p class="paragraph2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis dolor
+                laborum
+                aliquam, accusantium dolorem vero consectetur impedit minus dicta expedita voluptate? Quo aperiam at,
+                nulla
+                odio laudantium voluptatibus totam?</p>
+            <p class="paragraph3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis dolor
+                laborum
+                aliquam, accusantium dolorem vero consectetur impedit minus dicta expedita voluptate? Quo aperiam at,
+                nulla
+                odio laudantium voluptatibus totam?</p>
+        </div>
+        <div id="right"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi dolore maxime earum
+            saepe facilis velit ut deleniti rerum quos animi blanditiis fugiat cupiditate culpa atque tempore nulla,
+            minima aliquam.</p></div>
+    </div>
+    <div id="footer">
+        The end of the document.
+    </div>
+</body>
+
+</html>
