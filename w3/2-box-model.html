@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        div {
+            border: 1px solid black;
+            color: black;
+            box-sizing: border-box;
+        }
+        span {
+            border: 1px solid red;
+            color: blue;
+        }
+        .block1 {
+            background: red;
+            display: block;
+            height: 20px;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+        }
+        .block2 {
+            background: green;
+            display: block;
+            height: 20px;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+        }
+        .block3 {
+            background: blue;
+            display: block;
+            height: 20px;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+        }
+        .inline1 {
+            background: red;
+            display: inline;
+            border-radius: 20px;
+        }
+        .inline2 {
+            background: green;
+            display: inline;
+            border-radius: 20px;
+        }
+        .inline3 {
+            background: blue;
+            display: inline;
+            border-radius: 20px;
+        }
+        .ib1 {
+            background: red;
+            display: inline-block;
+            height: 20px;
+            width: 40px;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+        }
+        .ib2 {
+            background: green;
+            display: inline-block;
+            height: 20px;
+            width: 40px;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+        }
+        .ib3 {
+            background: blue;
+            display: inline-block;
+            height: 20px;
+            width: 40px;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+        }
+    </style>
+    <title>Box Model</title>
+</head>
+<body>
+    <!--create a page which demonstrates the difference between inline and block display using divs and spans-->
+
+    <div>
+        Block element.  Takes up entire line.  Takes up as much width as possible.
+    </div>
+
+    <div>
+        Block level elements start a new line.
+    </div>
+
+    <span>Span elemenets are in-line elements.  Takes up as little width as possible</span>
+    <div>You can put inline <span>span elements</span> inside of block level divs.</div>
+    <br />
+    Block elements:
+    <div class="block1">&nbsp;</div>
+    <div class="block2">&nbsp;</div>
+    <div class="block3">&nbsp;</div>
+    <br />
+    Inline elements
+    <span class="inline1">&nbsp;</span>
+    <div class="inline2">&nbsp;</div>
+    <div class="inline3">&nbsp;</div>
+    <br />
+    Inline-Block elements
+    <div class="ib1">&nbsp;</div>
+    <div class="ib2">&nbsp;</div>
+    <div class="ib3">&nbsp;</div>
+
+</body>
+</html>
