@@ -58,3 +58,52 @@ Add shadow to text
 
 ## text-indent
 indentation amount to indent text in a block.
+
+# Semantic HTML
+
+## Elements
+* header
+    * introductory content or navigational aids
+    * can't be descendent of header, footer, or address.
+* nav
+    * section with navigation links
+    * intended for major block of navigation links
+    * not necessary for use in footer
+* main
+    * main content of the body of a document or application
+    * should be unique to the document
+    * not a descendent of article, aside, footer, or nav
+* article
+    * Can stand on their own.  Self-contained
+        * forum post
+        * Magazine article
+        * blog post
+        * user review
+* section
+    * thematic group of content
+    * article - section - article nesting related elements.
+    * not a generic container, use div for that
+    * if section can stand on its own, use article.
+* aside
+    * content related to something
+    * examples
+        * side bars
+        * inserts
+        * adertisements
+        * author bio
+        * other related info
+* footer
+    * examples
+        * author info
+        * copyright data
+* h1-h6
+    * heading
+    * outlining, 1-6, organize content.
+* figure
+    * Picture or an Image.
+    * image and figcaption inside.
+* figcaption
+    * Caption of a figure, child of figure tag
+* address
+    * context information for nearest article.
+
