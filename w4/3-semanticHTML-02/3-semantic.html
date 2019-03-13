@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #C4C5CA;
+        }
+
+        .pageHeader {
+            background-color: #CE1E80;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pageHeader figure {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pageHeader img {
+            width: 95px;
+        }
+
+        .pageHeader h1 {
+            display: block;
+            float: left;
+            height: 100%;
+            margin-left: 10px;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            box-sizing: border-box;
+        }
+
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        nav {
+            background-color: #96156D;
+            color: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 900px;
+            margin: auto;
+            background-color: #3783b3;
+        }
+
+        article {
+            float: left;
+            width: 64%;
+            padding: 0 2%;
+            background: #fff;
+            color: #3783b3;
+            box-sizing: border-box;
+        }
+
+        article header {
+            border-bottom: 1px solid #3783b3;
+        }
+
+        article footer {
+            border-top: 1px solid #3783b3;
+        }
+
+        aside {
+            float: left;
+            width: 36%;
+            height: 100%;
+            padding: 0 2%;
+            background-color: #3783b3;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .pageFooter {
+            background-color: #96156D;
+            color: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+    <title>W4 #3 Semantic HTML</title>
+</head>
+
+<body>
+    <header class="pageHeader row">
+        <figure>
+            <img src="logo.png" alt="Our Logo">
+            <figcaption>Bam! What?</figcaption>
+        </figure>
+        <h1>Welcome To Our Website!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+        </ul>
+    </nav>
+
+    <div class="container row">
+        <article>
+            <header>
+                <h2>This is an Article</h2>
+            </header>
+
+            <section>
+                <h3>The first section</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione tempora et dolore earum ab,
+                    voluptate iusto aliquam commodi laborum odio corporis maxime odit neque blanditiis, cupiditate
+                    natus. Quae, sint.</p>
+
+                <h4>More in the first section</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam sequi, voluptate maiores
+                    debitis exercitationem quisquam possimus vero optio ipsa quasi ea quibusdam. Quibusdam culpa
+                    corrupti atque ut, quis rem.</p>
+            </section>
+
+            <section>
+                <h3>The second section</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid corrupti ipsa, impedit
+                    reiciendis a esse! Assumenda qui reprehenderit distinctio magnam ullam? In, voluptatem nesciunt aut
+                    quo fugiat id dolorum?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ex enim laborum voluptas illum magnam
+                    voluptatum voluptatibus, consectetur ea vero sit nam quo sapiente natus ab possimus dolor rem neque!
+                </p>
+            </section>
+
+            <footer>
+                <h4>About the author</h4>
+                <p>The author wishes to remain anonymous</p>
+            </footer>
+
+        </article>
+
+        <aside>
+
+            <h2>Tangentially related content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium non ab repudiandae itaque nobis
+                quae, perspiciatis soluta, praesentium dolores et repellat. Hic consectetur ex debitis facilis eligendi
+                cum labore earum.</p>
+        </aside>
+    </div>
+
+    <footer class="pageFooter">
+        <ul>
+            <li>Copyright</li>
+            <li>Social Media Links</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
