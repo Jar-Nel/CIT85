@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FB Assign 6.2</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0;
+            padding:0;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            align-content: center;
+            margin:0;
+            padding:0;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            text-align: center;
+            width:100%;
+            border-bottom: 2px solid white;
+            box-sizing: border-box;
+            margin:0;
+        }
+
+        li>a {
+            display: inline-block;
+            width:100%;
+            padding: 15px 0;
+            color: white;
+            text-decoration: none;
+            background-color: #05C0FF;
+        }
+
+        li>a:hover {
+            text-decoration: none;
+            background-color: skyblue;
+            text-shadow: 0px 0px 3px #222;
+        }
+
+        @media screen and (min-width: 600px) {
+            ul {
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                background-color: #05C0FF;
+            }
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                width: 100px;
+                border-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href='#'>Home</a></li>
+        <li><a href='#'>About</a></li>
+        <li><a href='#'>Products</a></li>
+        <li><a href='#'>Contact</a></li>
+    </ul>
+</body>
+
+</html>
