@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w9-2-pos-rel</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            color: white;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        div:nth-child(2) {
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Position RELATIVE means RELATIVE to itself. Set three divs on a page. Make them squares. Use "position relative" to move the second div away from where it should have been.-->
+    <div>&nbsp;</div>
+    <div>Relative to itself</div>
+    <div>&nbsp;</div>
+</body>
+
+</html>
