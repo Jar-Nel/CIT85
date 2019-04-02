@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FB Assign 7</title>
+    <style>
+        body {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header,
+        article,
+        aside,
+        footer {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #FF7043;
+        }
+
+        article {
+            background-color: #00AFFB;
+        }
+
+        aside {
+            text-align: center;
+        }
+
+        aside:nth-child(3) {
+            background-color: #FFCE00;
+        }
+
+        aside:nth-child(4) {
+            background-color: #FF7BB7;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #8DDD94;
+        }
+
+        @media screen and (min-width:600px) {
+            body {
+                padding: 0 3vw;
+            }
+
+            aside {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:800px) {
+            body {
+                padding: 0 5vw;
+            }
+
+            article {
+                width: 70%;
+            }
+
+            aside {
+                width: 15%;
+            }
+
+            aside:nth-child(3) {
+                order: 1;
+            }
+
+            aside:nth-child(4) {
+                order: 3;
+            }
+
+            article {
+                order: 2;
+            }
+
+            footer {
+                order: 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <article>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit reiciendis nostrum numquam harum minus
+            nisi fuga commodi ut, doloribus magni ipsam. Atque quia eum voluptas non. Quam esse officia fugit!
+        </p>
+    </article>
+    <aside>Aside 1</aside>
+    <aside>Aside 2</aside>
+    <footer>Footer</footer>
+</body>
+
+</html>
