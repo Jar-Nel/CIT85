@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w9-3-pos-abs</title>
+    <style>
+        div {
+            border: 2px solid #f00;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        body>div:first-child {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: #bbb;
+        }
+
+        div>div:first-child {
+            position: absolute;
+            top: 120px;
+            right: 20px;
+            width: 300px;
+            height: 200px;
+            background-color: #5A98A2;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Relative
+        <div>
+            Absolute
+        </div>
+    </div>
+</body>
+
+</html>
