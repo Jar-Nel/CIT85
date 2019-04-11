@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W15 Animation Ball</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        .path {
+            position: relative;
+            width: 50vw;
+            height: 50vh;
+            border-radius: 50%;
+
+            animation: moveball 8s infinite linear;
+        }
+
+        .ball {
+            box-sizing: border-box;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            background-color: lightblue;
+            background: url('beachball-clipart-baby-ball-2.png');
+            background-size: cover;
+            color: black;
+            text-shadow: 0 0 1px #333;
+
+
+            animation: orientball 8s infinite linear;
+
+        }
+
+        @keyframes moveball {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            50% {
+                transform: rotate(180deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes orientball {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            50% {
+                transform: rotate(-180deg)
+            }
+
+            100% {
+                transform: rotate(-360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="path">
+        <div class="ball">
+            Create a ball that moves around the screen continuously.
+        </div>
+    </div>
+</body>
+
+</html>
