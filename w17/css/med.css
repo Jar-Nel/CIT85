@@ -1,0 +1,50 @@
+.splash {
+    display:block;
+    width:600px;
+}
+
+.hbmenu_b {
+    display:none;
+}
+
+
+nav {
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    width: auto;
+    height:auto;
+    box-shadow: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    top: auto;
+    right: auto;
+    margin-right: 0;
+    transform: none;
+}
+nav ul {
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin: auto;
+    margin-right:20px;
+    color: #EA2031;
+}
+
+#hbmenu_cb:checked ~ nav {
+    transform: none;
+}
+
+.container {
+    margin:auto;
+    width: 80%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
