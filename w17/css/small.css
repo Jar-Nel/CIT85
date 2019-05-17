@@ -157,9 +157,10 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .menuItems article {
-    max-width: 300px;
+    max-width: 310px;
     background-color: #fff;
     padding: 10px;
     box-sizing: border-box;
@@ -178,12 +179,27 @@ nav a:hover {
 
 .menuDetail section {
     width: 50%;
+    padding-right:2px;
 }
 
 .menuDetail aside {
     width: 50%;
+    padding-left: 2px;
 }
 
 .menuDetail aside img {
     width:100%;
+}
+
+.about {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.about img {
+    width: 90vw;
+    max-width: 600px;
 }
